@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class Layout extends React.component {
+class Layout extends React.Component {
 	render() {
+		const name = "Patrick";
 		return (
-			<h1>It Works!</h1>
+			<h1>It's {name}!</h1>
 		);
 	}
 }
 
-const app = document.getElemetById("app");
+const app = document.getElementById("app");
 
-ReactDOM.render(<Layout/>, app)
+ReactDOM.render(<Layout/>, app);
